@@ -16,12 +16,10 @@
    2. The colour theme is not set.
    3. The UI of pages needs to be improved.
    4. Authentication is not done.
-   
-   5.Ideas.
     
 # 3. Hacktoberfest-22
    Contributors can contribute to this project in the <b>Improvements</b> folder. In improvements folder, contributors can either solve the improvements required as mentioned above or create some new improvements in the project. Contributors are supposed to mention their improvement in the comments of their file and keep the name of file as <b><i>"imp_github username.language_used"</i></b>.
    
-   Before making pull requests makes sure to read the <a href="Contributing Guidelines and also check for issues with "hactoberfest" label.
+   Before making pull requests makes sure to read the <a href="https://github.com/Navaneethp007/Miss_me/blob/main/CONTRIBUTING.md">Contributing Guidelines</a> and also check for issues with "hactoberfest" label.
    
 #                                                              THANK YOU
