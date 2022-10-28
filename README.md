@@ -1,7 +1,7 @@
 # Contents:
   1. Description of the project
   2. Improvements Required
-  3. Instructions to be followed to check its working
+  3. Hacktoberfest-22
 
 # 1. Description of the project
    On an average almost 70% people who are missing are not found and out of that 30% people are missing because we make them missing. It is not only the fault of the government
@@ -15,14 +15,12 @@
    1. The api calling is not done.
    2. The colour theme is not set.
    3. The UI of pages needs to be improved.
+   4. Authentication is not done.
+   5.Ideas
     
-# 3. Instructions to be followed to check the app's working
-   1. Open this repository in your Visual Studio code or Android Studio.
-   2. Click miss_me->test->pagetest.dart.
-   3. On pagetest.dart, type "Splash()" near "home:"...it will start from the starting of the app.
-   4. You will be then taken to the login page from there click "Create Account" and then you will be taken to the Signup page.
-   5. After registering, you can a see a set of missions, each mission giving you information on a missing person.
-   6. If you find the person, then click "Report mission" to report and if you want to see other agents working on the same mission click the other button.
-   7. Since the backend is not done, all pages are static.
+# 3. Hacktoberfest-22
+   Contributors can contribute to this project in the <b>Improvements</b> folder. In improvements folder, contributors can either solve the improvements required as mentioned above or create some new improvements in the project. Contributors are supposed to mention their improvement in the comments of their file and keep the name of file as <b><i>"imp_github username.language_used"</i></b>.
+   
+   Before making pull requests makes sure to read the Contributing Guidelines and also check for issues with "hactoberfest" label.
    
 #                                                              THANK YOU
