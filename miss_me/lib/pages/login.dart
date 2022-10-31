@@ -18,7 +18,12 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Container(
     child: Scaffold(
-      backgroundColor: Colors.transparent,
+      appBar: AppBar(
+        title: const Text("Welcome"),
+        centerTitle: true,
+        backgroundColor: Colors.deepPurple[400],
+      ),
+      backgroundColor: Colors.white,
         body: SingleChildScrollView(
           child: Column(
             children: [
@@ -26,14 +31,14 @@ class _LoginPageState extends State<LoginPage> {
                     padding: const EdgeInsets.only(top: 20.0, bottom: 30.0),
                     child: Center(
                       child: Container(
-                          width: MediaQuery.of(context).size.width*0.7,
-                          height: 100,
-                          child: const Text("Welcome Back Agents🦸‍♂️🦸‍♀️",
+                          width: MediaQuery.of(context).size.width* 0.8,
+                          height: 120,
+                          child: const Text("Welcome Back\nAgents!\n🦸‍♂️🦸‍♀️",
                           textAlign: TextAlign.center,
                               style: TextStyle(
-                                fontSize: 40,
+                                fontSize: 35,
                                 fontWeight: FontWeight.bold,
-                                fontStyle: FontStyle.italic,
+                                color: Colors.black,
                               ))),
                     ),
                   ),
@@ -43,7 +48,7 @@ class _LoginPageState extends State<LoginPage> {
                     child: Row(
                       children: const [
                         Text(
-                          "Code name",
+                          "Code Name",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 25,
@@ -120,12 +125,13 @@ class _LoginPageState extends State<LoginPage> {
                     ],
                   ),
                 ),
+                  SizedBox(height: 20.0,),
                   Container(
                     padding: const EdgeInsets.only(
                         left: 20.0, right: 20.0, top: 10.0, bottom: 10.0),
                     width: 200,
                     decoration: BoxDecoration(
-                        color: Colors.greenAccent,
+                        color: Colors.green[400],
                         borderRadius: BorderRadius.circular(200)),
                     child: TextButton(
                       onPressed: () {
@@ -150,7 +156,7 @@ class _LoginPageState extends State<LoginPage> {
                      child: const Text(
                        "New User? Create Account",
                        style: TextStyle(
-                         color: Colors.black,
+                         color: Colors.white,
                          fontSize: 20,
                        ),
                      ),

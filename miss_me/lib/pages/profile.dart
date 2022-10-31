@@ -11,6 +11,11 @@ class _ProState extends State<Pro> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text("Agent Profile"),
+        centerTitle: true,
+        backgroundColor: Colors.deepPurple[400],
+      ),
       body: Column(
         children: [
           Container(
@@ -18,7 +23,7 @@ class _ProState extends State<Pro> {
                   gradient: LinearGradient(
                       begin: Alignment.topCenter,
                       end: Alignment.bottomCenter,
-                      colors: [Colors.black, Colors.redAccent])),
+                      colors: [Colors.white70, Colors.deepPurple])),
               child: Container(
                 width: double.infinity,
                 height: 350.0,
@@ -36,10 +41,11 @@ class _ProState extends State<Pro> {
                         height: 10.0,
                       ),
                       const Text(
-                        "Agent NVP",
+                        "AGENT NVP",
                         style: TextStyle(
                           fontSize: 22.0,
-                          color: Colors.white,
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold,
                         ),
                       ),
                       const SizedBox(
@@ -56,14 +62,15 @@ class _ProState extends State<Pro> {
                               horizontal: 8.0, vertical: 22.0),
                           child: Row(
                             children: [
+                              SizedBox(width: 5.0,),
                               Expanded(
                                 child: Column(
                                   children: const [
                                     Text(
                                       "Missions Completed",
                                       style: TextStyle(
-                                        color: Colors.redAccent,
-                                        fontSize: 22.0,
+                                        color: Colors.purple,
+                                        fontSize: 18.0,
                                         fontWeight: FontWeight.bold,
                                       ),
                                     ),
@@ -74,20 +81,21 @@ class _ProState extends State<Pro> {
                                       "0",
                                       style: TextStyle(
                                         fontSize: 20.0,
-                                        color: Colors.pinkAccent,
+                                        color: Colors.black,
                                       ),
                                     )
                                   ],
                                 ),
                               ),
+                              SizedBox(width: 5.0,),
                               Expanded(
                                 child: Column(
                                   children: const [
                                     Text(
                                       "Missions Accepted",
                                       style: TextStyle(
-                                        color: Colors.redAccent,
-                                        fontSize: 22.0,
+                                        color: Colors.purple,
+                                        fontSize: 18.0,
                                         fontWeight: FontWeight.bold,
                                       ),
                                     ),
@@ -98,31 +106,33 @@ class _ProState extends State<Pro> {
                                       "2",
                                       style: TextStyle(
                                         fontSize: 20.0,
-                                        color: Colors.pinkAccent,
+                                        color: Colors.black,
                                       ),
                                     )
                                   ],
                                 ),
                               ),
+                              SizedBox(width: 5.0,),
                               Expanded(
                                 child: Column(
                                   children: const [
                                     Text(
-                                      "Rank",
+                                      "Current Rank",
                                       style: TextStyle(
-                                        color: Colors.redAccent,
-                                        fontSize: 22.0,
+                                        color: Colors.purple,
+                                        fontSize: 18.0,
                                         fontWeight: FontWeight.bold,
                                       ),
                                     ),
                                     SizedBox(
-                                      height: 5.0,
+                                      height: 2.5,
                                     ),
                                     Text(
                                       "Rookie",
                                       style: TextStyle(
                                         fontSize: 20.0,
-                                        color: Colors.pinkAccent,
+                                        color: Colors.black,
+
                                       ),
                                     )
                                   ],
@@ -147,7 +157,7 @@ class _ProState extends State<Pro> {
                   Text(
                     "Info:",
                     style: TextStyle(
-                        color: Colors.redAccent,
+                        color: Colors.black,
                         fontStyle: FontStyle.normal,
                         fontSize: 28.0),
                   ),

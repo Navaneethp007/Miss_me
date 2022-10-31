@@ -12,20 +12,26 @@ class _PassState extends State<Pass> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text("Reset Agent Code"),
+        centerTitle: true,
+        backgroundColor: Colors.deepPurple[400],
+      ),
+      backgroundColor: Colors.white,
         body: SingleChildScrollView(
       child: Column(
         children: <Widget>[
           Padding(
-            padding: const EdgeInsets.only(top: 60.0, bottom: 30.0),
+            padding: const EdgeInsets.only(top: 60.0, bottom: 30.0,left: 20.0),
             child: Center(
               child: Container(
                   width: 700,
                   height: 50,
                   child: const Text("Agent Code Changer",
                       style: TextStyle(
-                        fontSize: 40,
+                        fontSize: 35,
                         fontWeight: FontWeight.bold,
-                        fontStyle: FontStyle.italic,
+                        color: Colors.black,
                       ))),
             ),
           ),
@@ -95,7 +101,7 @@ class _PassState extends State<Pass> {
                 left: 20.0, right: 20.0, top: 10.0, bottom: 10.0),
             width: 200,
             decoration: BoxDecoration(
-                color: Colors.greenAccent,
+                color: Colors.green[400],
                 borderRadius: BorderRadius.circular(200)),
             child: TextButton(
               onPressed: () {
