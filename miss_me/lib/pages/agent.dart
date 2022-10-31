@@ -171,6 +171,8 @@ class _AgentsState extends State<Agents> {
       child: Scaffold(
         appBar: AppBar(
           title: const Text("Agent List"),
+          centerTitle: true,
+          backgroundColor: Colors.deepPurple[400],
         ),
         body: SingleChildScrollView(
           child: Column(
