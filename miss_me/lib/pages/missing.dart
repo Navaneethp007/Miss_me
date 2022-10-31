@@ -91,7 +91,7 @@ class _MissoState extends State<Misso> {
                     child:
                   TextButton(
                     onPressed: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => const Home()));
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const Report()));
                       },
                       child: const Text("Report mission",
                       style: TextStyle(
@@ -317,7 +317,7 @@ class _MissthState extends State<Missth> {
                     child:
                   TextButton(
                     onPressed: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => const Home()));
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const Report()));
                       },
                       child: const Text("Report mission",
                       style: TextStyle(
