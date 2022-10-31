@@ -1,1 +1,4 @@
-
+1. Changed the Color theme.
+2. Improved UI in missions page for buttons.
+3. New file for Navigation Bar.
+4. Fixed Function calls.
