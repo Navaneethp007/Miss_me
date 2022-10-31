@@ -15,25 +15,28 @@ class _MissoState extends State<Misso> {
       child: Scaffold(
       appBar: AppBar(
         title: const  Text("Top Mission"),
+        centerTitle: true,
+        backgroundColor: Colors.deepPurple[400],
       ),
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
             Container(
               // ignore: prefer_const_literals_to_create_immutables
+              margin: const EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 0.0),
               child: Row(
                 children: const [ 
               Image(
                image:NetworkImage("http://4.bp.blogspot.com/_MsrE1eHur6Y/TNnEM-Qol8I/AAAAAAAACJE/60Jxds0WFx0/s1600/missing+1.jpg"),
-              height: 200,
-              width: 200,
+              height: 150,
+              width: 150,
               ),
-              SizedBox(width: 30,),
+              SizedBox(width:1.0,),
               Text(
                 "Name : Muhammed Shah\n"
-                "Age : 20\nLocation: Gujrat, India",
+                "Age : 20\nLocation: Gujrat,\nIndia",
                 style: TextStyle(
-                  fontSize: 20,
+                  fontSize: 18,
                   fontWeight: FontWeight.bold,
                 ),
               )
@@ -47,7 +50,6 @@ class _MissoState extends State<Misso> {
                   "Date of missing: October 2,2021\n\nDuration of missing: 45\n\nLast seen at: Gandhinagar Street at 10:30 am\n\nAny police investigation: Yes\n\nPolice readings: Kidnapping-no evidence in 2 weeks-case closed",
                   style: TextStyle(
                     fontSize: 20,
-                    fontStyle: FontStyle.italic,
                   ),
                 ),
               ),
@@ -55,13 +57,13 @@ class _MissoState extends State<Misso> {
             Container(
               margin: const EdgeInsets.all(20),
              
-              child: Row(
-                children:  [
+              child: Column(
+                children: [
                   Container(
                     decoration:  BoxDecoration(
-                        color: Colors.greenAccent,
-                       
-                    
+                        color: Colors.green,
+
+
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child:
@@ -77,13 +79,13 @@ class _MissoState extends State<Misso> {
                     ),
                     ),
                     ),
-              
+
                   ),
-            
-                  const SizedBox(width: 20,),
+
+                  const SizedBox(height: 20,),
                   Container(
                     decoration:  BoxDecoration(
-                        color: Colors.blue,
+                        color: Colors.red,
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child:
@@ -99,10 +101,10 @@ class _MissoState extends State<Misso> {
                       ),
                       ),
                       ),
-                
+
                   ),
                 ],
-                  ),
+              ),
                   ),
                 ],
               ),
@@ -123,13 +125,16 @@ class _MisstState extends State<Misst> {
       child: Scaffold(
       appBar: AppBar(
         title: const Text("Mission"),
+        centerTitle: true,
+        backgroundColor: Colors.deepPurple[400],
+
       ),
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
             Container(
               // ignore: prefer_const_literals_to_create_immutables
-              margin: const EdgeInsets.all(20),
+              margin: const EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 0.0),
               child: Row(
                 children: const [ 
               Image(
@@ -137,12 +142,12 @@ class _MisstState extends State<Misst> {
               height: 80,
               width: 150,
               ),
-              SizedBox(width: 20,),
+              SizedBox(width:1.0,),
               Text(
                 "Name : Muhsina M\n"
-                "Age : 20\nLocation: Uttar Pradesh, India",
+                "Age : 20\nLocation: Uttar Pradesh,\nIndia",
                 style: TextStyle(
-                  fontSize: 20,
+                  fontSize: 18,
                   fontWeight: FontWeight.bold,
                 ),
               )
@@ -158,7 +163,6 @@ class _MisstState extends State<Misst> {
                   "Date of missing: October 5,2021\n\nDuration of missing: 35\n\nLast seen at: Agra street at 10:45 am\n\nAny police investigation: No\n\nPolice readings: NIL",
                   style: TextStyle(
                     fontSize: 20,
-                    fontStyle: FontStyle.italic,
                   ),
                 ),
               ),
@@ -166,13 +170,13 @@ class _MisstState extends State<Misst> {
             Container(
               margin: const EdgeInsets.only(left:20),
              
-              child: Row(
-                children:  [
+              child: Column(
+                children: [
                   Container(
                     decoration:  BoxDecoration(
-                        color: Colors.greenAccent,
-                       
-                    
+                        color: Colors.green,
+
+
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child:
@@ -188,13 +192,13 @@ class _MisstState extends State<Misst> {
                     ),
                     ),
                     ),
-              
+
                   ),
-            
-                  const SizedBox(width: 20,),
+
+                  const SizedBox(height: 20,),
                   Container(
                     decoration:  BoxDecoration(
-                        color: Colors.blue,
+                        color: Colors.red,
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child:
@@ -210,10 +214,10 @@ class _MisstState extends State<Misst> {
                       ),
                       ),
                       ),
-                
+
                   ),
                 ],
-                  ),
+              ),
                   ),
                 ],
               ),
@@ -235,13 +239,15 @@ class _MissthState extends State<Missth> {
       child: Scaffold(
       appBar: AppBar(
         title: const Text("Mission"),
+        centerTitle: true,
+        backgroundColor: Colors.deepPurple[400],
       ),
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
             Container(
               // ignore: prefer_const_literals_to_create_immutables
-              margin: const EdgeInsets.all(20),
+              margin: const EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 0.0),
               child: Row(
                 children: const [ 
               Image(
@@ -249,12 +255,12 @@ class _MissthState extends State<Missth> {
               height: 150,
               width: 150,
               ),
-              SizedBox(width: 20,),
+              SizedBox(width: 1.0,),
               Text(
                 "Name : Pranav\n"
-                "Age : 29\nLocation: Telengana, India",
+                "Age : 29\nLocation: Telengana,\nIndia",
                 style: TextStyle(
-                  fontSize: 20,
+                  fontSize: 18,
                   fontWeight: FontWeight.bold,
                 ),
               )
@@ -270,7 +276,6 @@ class _MissthState extends State<Missth> {
                   "Date of missing: October 10,2021\n\nDuration of missing: 15\n\nLast seen at: Nizamabad street at 8:30 pm\n\nAny police investigation: Yes\n\nPolice readings: Not available",
                   style: TextStyle(
                     fontSize: 20,
-                    fontStyle: FontStyle.italic,
                   ),
                 ),
               ),
@@ -278,13 +283,13 @@ class _MissthState extends State<Missth> {
             Container(
               margin: const EdgeInsets.only(left:20),
              
-              child: Row(
-                children:  [
+              child: Column(
+                children: [
                   Container(
                     decoration:  BoxDecoration(
-                        color: Colors.greenAccent,
-                       
-                    
+                        color: Colors.green,
+
+
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child:
@@ -300,13 +305,13 @@ class _MissthState extends State<Missth> {
                     ),
                     ),
                     ),
-              
+
                   ),
-            
-                  const SizedBox(width: 20,),
+
+                  const SizedBox(height: 20,),
                   Container(
                     decoration:  BoxDecoration(
-                        color: Colors.blue,
+                        color: Colors.red,
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child:
@@ -322,10 +327,10 @@ class _MissthState extends State<Missth> {
                       ),
                       ),
                       ),
-                
+
                   ),
                 ],
-                  ),
+              ),
                   ),
                 ],
               ),
@@ -336,3 +341,4 @@ class _MissthState extends State<Missth> {
               );   
   }
 }
+

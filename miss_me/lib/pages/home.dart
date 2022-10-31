@@ -22,7 +22,9 @@ class _HomeState extends State<Home> {
     return Container(
       child: Scaffold(
         appBar: AppBar(
-          title: const Text('Missions Page'),
+          title: const Text('Missions'),
+          centerTitle: true,
+          backgroundColor: Colors.deepPurple[400],
         ),
         drawer: Drawer(
           child: ListView(
