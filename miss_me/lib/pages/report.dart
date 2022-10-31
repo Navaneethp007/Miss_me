@@ -13,20 +13,28 @@ class _ReportState extends State<Report> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text("Report Mission"),
+        centerTitle: true,
+        backgroundColor: Colors.deepPurple[400],
+      ),
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
             Padding(
-              padding: const EdgeInsets.only(top: 60.0, bottom: 30.0),
+              padding: const EdgeInsets.only(top: 0.0, bottom: 30.0),
               child: Center(
                 child: Container(
-                    width: MediaQuery.of(context).size.width * 0.7,
+                  padding: EdgeInsets.only(left: 20.0),
+                    color: Colors.indigo[400],
+                    width: MediaQuery.of(context).size.width * 1.2,
                     height: MediaQuery.of(context).size.height * 0.2,
-                    child: const Text("Mission Reporting Center🧥🧥",
+                    child: const Text("\nMission Reporting Center🧥",
                         style: TextStyle(
-                          fontSize: 40,
+                          fontSize: 38,
                           fontWeight: FontWeight.bold,
-                          fontStyle: FontStyle.italic,
+                          color: Colors.white,
+
                         ))),
               ),
             ),
@@ -36,10 +44,10 @@ class _ReportState extends State<Report> {
               child: Row(
                 children: const [
                   Text(
-                    "Enter the name of the person you found",
+                    "Enter the name of the person you\nfound:",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: 25,
+                      fontSize: 18,
                       color: Colors.black,
                     ),
                   ),
@@ -48,7 +56,7 @@ class _ReportState extends State<Report> {
             ),
             Container(
               padding: const EdgeInsets.only(
-                  top: 10.0, right: 20.0, bottom: 10.0, left: 20.0),
+                  top: 5.0, right: 20.0, bottom: 10.0, left: 20.0),
               child: const TextField(
                 keyboardType: TextInputType.text,
                 decoration: InputDecoration(
@@ -61,14 +69,14 @@ class _ReportState extends State<Report> {
             ),
             Container(
               padding: const EdgeInsets.only(
-                  top: 10.0, right: 20.0, bottom: 10.0, left: 20.0),
+                  top: 5.0, right: 20.0, bottom: 10.0, left: 20.0),
               child: Row(
                 children: const [
                   Text(
-                    "Enter the number of days after gone missing",
+                    "Enter the number of days after gone\nmissing:",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: 25,
+                      fontSize: 18,
                       color: Colors.black,
                     ),
                   ),
@@ -77,7 +85,7 @@ class _ReportState extends State<Report> {
             ),
             Container(
               padding: const EdgeInsets.only(
-                  top: 10.0, right: 20.0, bottom: 10.0, left: 20.0),
+                  top: 5.0, right: 20.0, bottom: 10.0, left: 20.0),
               child: const TextField(
                 keyboardType: TextInputType.text,
                 decoration: InputDecoration(
@@ -90,14 +98,14 @@ class _ReportState extends State<Report> {
             ),
             Container(
               padding: const EdgeInsets.only(
-                  top: 10.0, right: 20.0, bottom: 10.0, left: 20.0),
+                  top: 5.0, right: 20.0, bottom: 10.0, left: 20.0),
               child: Row(
                 children: const [
                   Text(
-                    "Location where you found him",
+                    "Location where you found him:",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: 25,
+                      fontSize: 18,
                       color: Colors.black,
                     ),
                   ),
@@ -106,7 +114,7 @@ class _ReportState extends State<Report> {
             ),
             Container(
               padding: const EdgeInsets.only(
-                  top: 10.0, right: 20.0, bottom: 10.0, left: 20.0),
+                  top: 5.0, right: 20.0, bottom: 10.0, left: 20.0),
               child: const TextField(
                 keyboardType: TextInputType.text,
                 decoration: InputDecoration(
@@ -119,14 +127,14 @@ class _ReportState extends State<Report> {
             ),
             Container(
               padding: const EdgeInsets.only(
-                  top: 10.0, right: 20.0, bottom: 10.0, left: 20.0),
+                  top: 5.0, right: 20.0, bottom: 10.0, left: 20.0),
               child: Row(
                 children: const [
                   Text(
-                    "Describe his mental and physical state",
+                    "Describe his mental and physical state:",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: 25,
+                      fontSize: 18,
                       color: Colors.black,
                     ),
                   ),
@@ -135,7 +143,7 @@ class _ReportState extends State<Report> {
             ),
             Container(
               padding: const EdgeInsets.only(
-                  top: 10.0, right: 20.0, bottom: 10.0, left: 20.0),
+                  top: 5.0, right: 20.0, bottom: 10.0, left: 20.0),
               child: const TextField(
                 keyboardType: TextInputType.text,
                 decoration: InputDecoration(
@@ -147,7 +155,7 @@ class _ReportState extends State<Report> {
               ),
             ),
             Container(
-              height: 40,
+              height: 60,
               width: 250,
               decoration: BoxDecoration(
                   color: Colors.blue, borderRadius: BorderRadius.circular(200)),
@@ -158,7 +166,7 @@ class _ReportState extends State<Report> {
                     context: context,
                     builder: (BuildContext context) => AlertDialog(
                       actionsAlignment: MainAxisAlignment.center,
-                      backgroundColor: Colors.purpleAccent[100],
+                      backgroundColor: Colors.deepPurple[100],
                       title: const Text(
                         'Details Taken',
                         style: TextStyle(
@@ -184,7 +192,6 @@ class _ReportState extends State<Report> {
                           child: const Text(
                             'Continue',
                             style: TextStyle(
-                              fontStyle: FontStyle.italic,
                               fontSize: 20.0,
                               color: Colors.black,
                             ),
@@ -199,7 +206,12 @@ class _ReportState extends State<Report> {
                   //     context, MaterialPageRoute(builder: (context) => Home()));
                 },
                 child: const Text('Submit',
-                    style: TextStyle(color: Colors.white, fontSize: 25)),
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 25,
+
+                    ),
+                ),
               ),
             ),
             const SizedBox(
