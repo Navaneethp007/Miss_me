@@ -2,7 +2,7 @@
 
 ## 📌 Overview  
 
-**Detective Hunt** is a **Flutter-based mobile app** where users **play detectives** and help locate missing persons. The app provides a list of **real-world missing people**, allowing users to **view details** and **submit reports** if they believe someone has been found. Users earn **reward points** for their contributions.  
+**Detective Hunt** is a **Flutter-based mobile app** where users **play detectives** and help locate missing persons. The app provides a list of **missing people**, allowing users to **view details** and **submit reports** if they believe someone has been found. Users earn **reward points** for their contributions.  
 
 This project was built as a **fun learning experience** to explore **Flutter concepts** while working on a meaningful problem.  
 
